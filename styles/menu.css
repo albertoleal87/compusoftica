@@ -1,0 +1,44 @@
+html[xmlns] .nav { display: block}
+.nav { font: normal .8em/1.5em Arial, Helvetica, sans-serif; float:right; position:relative; top:30px; right:17px;display: inline-block; z-index:100}
+.nav li { margin-left:4px;float:left; position:relative; list-style:none; }
+
+/* main level link */
+.nav a {  font:bold 11px/16px Arial, Helvetica, sans-serif; color: #333; display:block; padding:3px 8px 2px; -webkit-border-radius: 0.9em; -moz-border-radius: 0.9em; text-shadow: 0 1px 0 rgba(255, 255, 255, 1); vertical-align: middle;}
+
+/* main level link hover */
+.nav .current > a, .nav li:hover > a { color:#eee; background:#004d99; /*for non-css3 browsers*/ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#004d99', endColorstr='#036db9'); /* for IE */
+background:-webkit-gradient(linear, left top, left bottom, from(#004d99), to(#036db9)); /* for webkit browsers */ background: -moz-linear-gradient(top, #004d99, #036db9); /* for firefox 3.6+ */ -webkit-box-shadow: 0 1px 0 #FFF; -moz-box-shadow: 0 1px 0px #FFF; box-shadow: 0 1px 0 #FFF; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);}
+
+/* sub levels link hover */
+.nav ul li:hover a, .nav li:hover li a { background: none; color: #444; -webkit-box-shadow:none; -moz-box-shadow:none; }
+.nav ul a:hover { color:#fff !important; background: #004d99 !important; /* for non-css3 browsers */ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#004d99', endColorstr='#036db9'); /* for IE */
+background: -webkit-gradient(linear, left top, left bottom, from(#004d99), to(#036db9)) !important; /* for webkit browsers */ background: -moz-linear-gradient(top, #004d99, #036db9) !important; /* for firefox 3.6+ */ -webkit-border-radius: 0; -moz-border-radius: 0; text-shadow: 0 1px 1px rgba(0, 0, 0, .1); }
+
+/* level 2 list */
+.nav ul { display:none; width:165px; position:absolute; top:19px; border:solid 1px #b4b4b4; background:#eee; /*for non-css3 browsers*/ background:-webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#e3e3e3)); /* for webkit browsers */ background: -moz-linear-gradient(top, #f9f9f9, #e3e3e3); /* for firefox 3.6+ */ -webkit-border-radius: 10px; -moz-border-radius: 5px; border-radius: 5px; -webkit-box-shadow:-1px 1px 3px rgba(0, 0, 0, 0.8); -moz-box-shadow:-1px 1px 3px rgba(0, 0, 0, 0.8); box-shadow:-1px 1px 3px rgba(0, 0, 0, 0.8); z-index:200; opacity:0.95; /* CSS3 standard */ }
+
+/* dropdown */
+.nav li ul li a { color:#000; font-size:11px; font-weight:bold; padding:3px 8px; border-bottom:#FFF;text-shadow: 0 1px 0 #FFF }
+.nav li:hover > ul { display: block; }
+.nav ul li { float: none; margin: 0; padding: 0; }
+.nav ul a { font-weight: normal; text-shadow: 0 1px 0 rgba(255, 255, 255, 1); }/* level 3+ list */
+.nav ul ul { left: 164px; top: -3px; }
+/* rounded corners for first and last child */
+.nav ul li:first-child > a { -webkit-border-top-left-radius: 3px; -moz-border-radius-topleft: 3px; -webkit-border-top-right-radius: 3px; -moz-border-radius-topright: 3px; }
+.nav ul li:last-child > a { -webkit-border-bottom-left-radius: 3px; -moz-border-radius-bottomleft: 3px; -webkit-border-bottom-right-radius: 3px; -moz-border-radius-bottomright: 3px; }/* clearfix */
+.nav:after { content:""; display:block; clear:both; visibility:hidden; line-height:0; height:0}
+.vcenter {margin-top:10px}
+
+/* xnav */
+#panel{position:relative;min-width:980px;}
+#panel{display:block;height:25px;position:relative;background-image:url(../images/xnav.png);border-top:solid 1px #595959}
+#panel li{margin-top:2px}
+#xnav > li > a {	color:#CCC;	text-shadow: 0 1px #000;}
+#xnav .current2 > a, #xnav li:hover > a {
+	color:#eee;
+	background:#004d99;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#004d99', endColorstr='#036db9');background:-webkit-gradient(linear, left top, left bottom, from(#004d99), to(#036db9));background: -moz-linear-gradient(top, #004d99, #036db9);
+	-webkit-box-shadow: 0 -1px 0 #636363;
+	-moz-box-shadow: 0 1px 0px #808080;
+	box-shadow: 0 1px 0 #808080;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,6 @@
+@charset "utf-8";
+img{behavior:url("styles/iepngfix.htc")}
+#banneri{background:none}
+#panel ul{margin-top:2px}
+#xnav a{color:#CCC}
+#xnav a:hover,#xnav a.current2{color:#67c6ff}
